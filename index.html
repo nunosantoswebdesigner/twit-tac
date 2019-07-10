@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="edge-icons/css/ei.css" />
+		<link rel="stylesheet" type="text/css" href="icomoon/style.css" />
+	</head>
+	<body>
+		<div class="mediabox"></div>
+		<span id="iconStart" class="Icon Icon--home Icon--large Sart--Title"></span>
+		<h1 id="titleStart" class="Sart--Title">#twit-tac</h1>
+		<a id="linkStart" class="linkStart" onclick="startGame(this)">start</a>
+		<div class="container">
+			<h3 id="PlayerPlay1" class="player1Play">Twit Plays First!</h3>
+			<h3 id="PlayerPlay2" class="player2Play">Hashtag Plays Now!</h3>
+			<h3 id="PlayerPlay3" class="player2Play">Twit Plays Now!</h3>
+			<h3 id="Player1Win" class="Player1Win">Twit Win!</h3>
+			<h3 id="Player2Win" class="Player2Win">Hashtag Win!</h3>
+			<h3 id="Rmobile" class="Rmobile">min. screen 1189x720 px</h3>
+			<h3 id="RStartE" class="RStartE">No Winer!</h3>
+			<a id="RStart" class="RStart" onClick="window.location.reload()">try again</a>
+			<div onclick="onClick(this)" id="startGame" class="null">
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="a1"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="a2"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="a3"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="b1"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="b2"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="b3"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="c1"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="c2"></div>
+					<div onclick="mudarDeJogador(this)" class="quadrado" id="c3"></div>
+				</div>
+			</div>
+			<script src="custom.js"></script>
+		</body>
+</html>

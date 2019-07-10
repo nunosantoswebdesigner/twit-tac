@@ -1,0 +1,285 @@
+body {
+    background: #1da1f2;
+}
+
+.BodyGame {
+    background: #e6ecf0;
+}
+
+.container {
+    position: initial;
+}
+
+.jogo {
+    width: 70%;
+    height: 90%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%,-50%);
+    background: #1da1f2;
+    div {
+        display: block;
+        width: 32.7%;
+        height: 33%;
+        background: #1da1f2;
+        //border: 1px solid #e6ecf0;
+        float: left;
+        position: relative;
+        &:nth-child(3n+1) {
+            clear: both;
+        }
+        &:hover {
+            cursor: pointer;
+            background: #1279b9 !important
+        }
+        /*
+        &:before {
+            content: "\f053";
+            font-family: "edgeicons";
+            color: #fff;
+            font-size: 145px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+        }
+        */
+    }
+}
+
+.player1 {
+    position: relative;
+    /*background-image: url(./player1.png) !important;
+    background-size: 200px !important;
+    */
+    &:before {
+        content: "\e903";
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 210px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.player1Play {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 5%;
+    left: 50%;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    &:before {
+        content: "\e903";
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+}
+
+.Player1Win {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    &:before {
+        content: "\e903";
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 80px;
+        padding-right: 25px;
+    }
+}
+
+.player2 {
+    position: relative;
+    /*
+    background-image: url(./player2.png) !important;
+    background-size: 200px !important;
+    height: 200px;
+    width: 200px;
+    */
+    &:before {
+        content: "\e900";
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 210px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.player2Play {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 5%;
+    left: 50%;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    &:before {
+        content: "\e900";
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+}
+
+.Player2Win {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    &:before {
+        content: "\e900";
+        font-family: 'icomoon';
+        color: #fff;
+        font-size: 80px;
+        padding-right: 25px;
+    }
+}
+
+.PlayerPlay {
+    display: block !important;
+}
+
+.EndPlay {
+    display: none !important;
+}
+
+.linkStart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%,-50%);
+    &:hover {
+        color: #065e94;
+    }
+}
+
+.RStart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%,-50%);
+    display: none;
+    &:hover {
+        color: #065e94;
+    }
+}
+
+.RStartE {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+    &:before {
+        content: "\f053";
+        font-family: 'edgeicons';
+        color: #fff;
+        font-size: 85px;
+        padding-right: 25px;
+    }
+}
+
+.Rmobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 37px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 9999 !important;
+    display: none;
+}
+
+.Icon--home {
+    position: absolute !important;
+    top: 32% !important;
+    left: 50%;
+    transform: translate(-50%,-50%) !important;
+    color: #fff;
+    padding: 20px;
+    font-size: 108px !important;
+    -webkit-text-stroke: 0px !important;
+}
+
+.Sart--Title {
+    position: absolute !important;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff !important;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#titleStart{
+    color: transparent;
+}
+
+.mediabox {
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #023454 !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+/* RESP */
+
+@media only screen and (max-width: 1198px) {
+    #iconStart,
+    .Icon,
+    .linkStart,
+    .Sart--Title,
+    .Icon--large,
+    .Icon--home {
+        display: none !important;
+    }
+    .Rmobile {
+        display: block !important;
+    }
+
+    .mediabox {
+        display: block !important;
+    }
+}
